@@ -1,0 +1,12 @@
+.message-box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: var(--color-background-black-2);
+}
+
+.message-box-container > h1 {
+  font-size: 20px;
+}

@@ -1,0 +1,374 @@
+:root {
+  --color-background-black-1: #221c1c;
+  --color-background-black-2: #0d0606;
+  --color-background-page: #322d2d;
+  --color-text-body-1: #fff;
+  --color-accent-1: #ff0b0b;
+  --drop-shadow-1: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.12));
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text-body-1);
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-text-body-1);
+  cursor: pointer;
+}
+
+a {
+  color: var(--color-text-body-1);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: 'Oxanium', cursive;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+  color: var(--color-accent-1);
+}
+
+p {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+.accent {
+  color: var(--color-accent-1);
+}
+
+.active-link {
+  color: var(--color-accent-1);
+}
+
+.section-heading {
+  margin-left: 13px;
+  font-size: 22px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.heading-white {
+  color: var(--color-text-body-1);
+}
+
+.page-section {
+  margin-top: 30px;
+}
+
+.page-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--color-background-page);
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(../images/page-bg-2.png);
+  background-size: cover;
+}
+
+.page-wrapper-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(50, 45, 45, 0) 50.03%,
+    #322d2d 55.27%,
+    #322d2d 100%
+  );
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.page-container {
+  max-width: 800px;
+  width: 100%;
+  margin-top: 8px;
+  z-index: 2;
+  flex-grow: 1;
+}
+
+.user-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-container > button {
+  margin-left: 5px;
+}
+
+.login-button {
+  background-color: var(--color-background-black-2);
+  font-size: 11px;
+  font-weight: bold;
+  padding: 1px 22px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 13px;
+  background-color: var(--color-background-black-1);
+  padding: 0 10px;
+}
+
+.logo-main {
+  height: 50px;
+  width: 79px;
+}
+
+.page-nav {
+  color: #fff;
+}
+
+.page-nav > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.page-nav > ul > li {
+  margin-left: 20px;
+  font-size: 14px;
+  font-family: 'Oxanium', cursive;
+  color: var(--color-text-body-1);
+}
+
+.page-nav > ul > li:last-of-type {
+  margin-right: 10px;
+}
+
+/* HERO */
+.hero-container {
+  margin-top: 10px;
+  background-color: var(--color-background-black-1);
+  padding: 90px 0 90px 50px;
+  background-image: url('../images/bg-witcher2.png');
+  filter: var(--drop-shadow-1);
+  background-size: cover;
+}
+
+.hero-content-container {
+  max-width: 317px;
+}
+
+.hero-content-container > button {
+  margin-top: 15px;
+}
+
+.hero-heading-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.button-cta {
+  font-weight: bold;
+  background-color: var(--color-accent-1);
+  border: 0;
+  padding: 5px 28px;
+}
+
+/* ALL PLATFORMS */
+.all-platforms-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-background-black-1);
+  padding: 30px 50px;
+}
+
+.all-platforms-item {
+  display: flex;
+}
+
+.all-platforms-item > img {
+  margin-right: 15px;
+}
+
+.all-platforms-item > div > h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.all-platforms-item > div > p {
+  color: var(--color-accent-1);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.separator-vertical {
+  display: block;
+  width: 2px;
+  background-color: #fff;
+}
+
+/* Page main */
+.page-main {
+  margin-top: 30px;
+  padding: 0 10px;
+}
+
+.product-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(184px, 1fr));
+  margin-top: 10px;
+  margin-bottom: 112px;
+}
+
+.product-item {
+  width: 184px;
+  background-color: var(--color-background-black-1);
+}
+
+.product-content > h3 {
+  font-size: 16px;
+}
+
+.product-content > p {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60px;
+  padding: 5px;
+}
+
+/* FOOTER */
+.page-footer-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: var(--color-background-black-1);
+  z-index: 1;
+}
+
+.page-footer-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 800px;
+  width: 100%;
+  padding: 30px 10px;
+}
+
+.footer-logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-small {
+  height: 50px;
+  width: 79px;
+}
+
+.footer-content-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.footer-content-item > h2 {
+  font-size: 16px;
+  color: var(--color-text-body-1);
+}
+
+.footer-content-item > h2:after {
+  content: ' ';
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 22px;
+  border: 2px solid var(--color-accent-1);
+  width: 50px;
+}
+
+.footer-content-item > p {
+  margin-bottom: 8px;
+}
+
+.copyright-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  z-index: 1;
+}
+
+.copyright-container {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 10px;
+}
+
+.copyright-container > p > a {
+  color: var(--color-accent-1);
+}
+
+@media screen and (max-width: 600px) {
+  .page-header {
+    flex-direction: column;
+  }
+  .page-nav > ul {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .page-nav > ul > li {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .all-platforms-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .all-platforms-item {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .product-item {
+    justify-self: center;
+  }
+  .footer-content-container {
+    flex-direction: column;
+  }
+  .copyright-container {
+    font-size: 12px;
+  }
+  .all-platforms-item > img {
+    width: 32px;
+  }
+}

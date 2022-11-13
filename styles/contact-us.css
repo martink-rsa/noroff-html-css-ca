@@ -1,0 +1,48 @@
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Oxanium', cursive;
+}
+
+.contact-form > label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.contact-form > input,
+textarea {
+  width: 50%;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid #0d0606;
+  border-radius: 4px;
+  padding: 10px;
+  color: #fff;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.contact-form > textarea {
+  min-height: 218px;
+  resize: vertical;
+  width: 100%;
+}
+
+.contact-form > input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Oxanium', cursive;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form > input {
+    width: 100%;
+  }
+}
